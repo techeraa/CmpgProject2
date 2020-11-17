@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication2.Data.Employee>
+
+@{
+    ViewData["Title"] = "Analytics";
+
+}
+ @*Analytics page*@
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-sm">
+            <h1>@Model.ToList().Count()</h1>
+            <p>The total number of records</p>
+        </div>
+        <div class="col-sm">
+            <h1>@Model.Select(x => x.OwnerId == null).Count()</h1>
+            <p>The total number of records not relatig to User profiles</p>
+        </div>
+        <div class="col-sm">
+            <h1>@Model.Select(x => x.OwnerId != null).Count()</h1>
+            <p>The total number of records that relates to user profiles</p>
+        </div>
+    </div>
+</div>
+
+

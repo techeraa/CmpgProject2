@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAa4+ve+1CL0euE1wb3XCbrQAAAAACAAAAAAAQZgAAAAEAACAAAADZxROMixAlrOlJVnlAXKLtYS6f32ypfFQgcI4gqpL0wgAAAAAOgAAAAAIAACAAAADP49aQwFz5Z55DysWNAhbY+45RWcDFFQlCQBuCdYSPQoAAAADqouvsYUL3fX6jSxwJ1pgj7vkVO553vlt1t6HVy4u7bEMqvYy5A6ZBnQvn1Z5PFhDquIZ/aAua4MQPStH3nvuqs492ubnGmwwYMVqWIli8Z8TpOJc12ZYyOf8KHbSz3H8tLgh6gjAvwpVdMRcO6Zlod3gDCY5QJIMAQJ/dxlzDikAAAABowqZ+yQ9CNFwWqLIPCkIxmnnSqFbfjWqgjh5fIG9Yh0Djavrls8qGadT8DY/R+/vvkLLmz2GuRuHwuZtIBwRm</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:organizationx.database.windows.net,1433%3bInitial Catalog=MvcCore%3bUser Id=mogale08%40organizationx%3bPassword=Mp515408.,</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="WebApplication2.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:organizationx.database.windows.net,1433%3bInitial Catalog=MvcCore%3bUser Id=mogale08%40organizationx%3bPassword=Mp515408.,</Value>
+    </EFMigrations>
+    <EFMigrations Include="WebApplication2.Data.Context">
+      <Value>Data Source=tcp:organizationx.database.windows.net,1433%3bInitial Catalog=MvcCore%3bUser Id=mogale08%40organizationx%3bPassword=Mp515408.,</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
